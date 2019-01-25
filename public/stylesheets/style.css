@@ -1,9 +1,8 @@
 body {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', 'Arial';
     height: 100%;
     width: 100%;
     margin: 0;
-    
     overflow: scroll;
 }
 
@@ -20,31 +19,17 @@ body {
     border-left-width: 0px;
     border-right-width: 0px;
     margin: 0px;
-    background: #ffffff; /* Old browsers */
-    /* background: -moz-linear-gradient(top, #f5f0ec 0%, #ffffff 100%); 
-    background: -webkit-linear-gradient(top, #f5f0ec 0%,#ffffff 100%); 
-    background: linear-gradient(to bottom, #f5f0ec 0%,#ffffff 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f0ec', endColorstr='#ffffff',GradientType=0 );  */
+    background: #ffffff;
 }
-/* 
-.fstlink {
-    color: #1565de;
-}
-
-.sndlink {
-    color: #56ef6f;
-} */
 
 h1 {
-    font-family: 'Garamond', 'Times New Roman', 'Times';
-    /* font-family: 'Helvetica'; */
+    font-family: 'Baskerville Old Face', 'Baskerville', 'Times New Roman', 'Times', 'Serif';
+    color: #cb1f1d;
     font-style: italic;
-    /* text-transform: uppercase; */
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0px;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 p {
@@ -79,16 +64,21 @@ ul.nav {
     margin-bottom: 25px;
     margin-top: 0px;
 	padding-bottom: 10px;
-	list-style: none;
+    list-style: none;
 }
 
 ul.nav li {
   text-align: center;
   display: inline;
   font-size: 11px;
+  padding-right: 5px;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+}
+
+.act {
+    text-decoration: underline;
 }
