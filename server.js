@@ -19,13 +19,13 @@ app.get('/', async (req, res) => {
         headers: { 'authorization': 'Client-ID ' + clientId }
     }).then((res) => {
         images += `<div class="left">`;
-        for (let i = 0; i < res.data.data.length; i+=2) {
+        for (let i = res.data.data.length -1 ; i > 0; i-=2) {
             let src = res.data.data[i].link;
             images += `<img src="${src}">`;
         }
         images += `</div>`;
         images += `<div class="right">`;
-        for (let i = 1; i < res.data.data.length; i+=2) {
+        for (let i = res.data.data.length- 2; i > 0; i-=2) {
             let src = res.data.data[i].link;
             images += `<img src="${src}">`;
         }
