@@ -9,14 +9,14 @@ let settings = {
 
 let imgs = [];
 let counter = 0; 
-$.ajax(settings).done( (response) => {
+$.ajax(settings).done( function(response) {
     let j = 0;
     for (let i = response.data.length - 1; i >= 0; i--) {
         imgs[j] = response.data[i].link;
         j++;
     }
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
         if(i % 2 === 0) {
             $('.left').append(`<img id="lefty" src="${imgs[i]}" />`);
         }
@@ -29,9 +29,9 @@ $.ajax(settings).done( (response) => {
 });
 
 
-$(window).scroll(() => {
+$(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() == $(document).height() && counter < imgs.length) {
-        let ub = counter + 10;
+        let ub = counter + 30;
         for (counter; (counter <= ub) && (counter < imgs.length) ; counter++) {
 
             if (counter % 2 === 0) {
