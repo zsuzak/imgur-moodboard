@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica', 'Arial';
+    font-family: 'Helvetica', 'Arial', sans-serif;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -23,12 +23,11 @@ body {
 }
 
 h1 {
-    font-family: 'Baskerville Old Face', 'Garamond', 'Times New Roman', 'Times';
+    font-family: 'Baskerville Old Face', 'Garamond', 'Times New Roman', 'Times', serif;
     font-style: italic;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0px;
-    /* text-transform: uppercase; */
     font-weight: normal;
     font-size: 20px;
 }
@@ -40,16 +39,16 @@ p {
 }
 
 .left {
-    margin-left: 26%;
+    margin-left: 17%;
     margin-right: 1%;
     float: left;
-    width: 23%;
+    width: 32%;
 }
 .right {
     margin-left: 1%;
-    margin-right: 26%;
+    margin-right: 17%;
     float: right;
-    width: 23%;
+    width: 32%;
 }
 
 img {

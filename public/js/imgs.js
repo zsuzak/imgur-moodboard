@@ -1,5 +1,5 @@
 let settings = {
-    "url": "https://api.imgur.com/3/album/RZUAxbC/images",
+    "url": "https://api.imgur.com/3/album/itw8iMo/images",
     "method": "GET",
     "timeout": 0,
     "headers": {
@@ -29,7 +29,7 @@ $.ajax(settings).done( (response) => {
 });
 
 
-$(window).scroll(function() {
+$(window).scroll(() => {
     if($(window).scrollTop() + $(window).height() == $(document).height() && counter < imgs.length) {
         let ub = counter + 10;
         for (counter; (counter <= ub) && (counter < imgs.length) ; counter++) {
